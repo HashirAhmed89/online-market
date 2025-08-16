@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stylish Sneakers | Fresh Finds</title>
+  <link rel="stylesheet" href="product.css">
+</head>
+<body>
+
+  <header>
+    <h1>Fresh Finds</h1>
+  </header>
+
+  <!-- Main Product -->
+  <div class="product-container">
+    <div class="product-image">
+      <img src="https://img.freepik.com/free-photo/modern-shoes_144627-38028.jpg" alt="Stylish Sneakers">
+    </div>
+
+    <div class="product-details">
+      <h2>Stylish Sneakers</h2>
+      <p class="description">
+        Step up your fashion game with these stylish and comfortable sneakers. Designed for both casual wear and active lifestyles.
+      </p>
+
+      <div class="price-box">
+        <del>PKR 5,000</del>
+        <strong>PKR 2,999</strong>
+      </div>
+
+      <label for="size">Select Size:</label>
+      <select id="size">
+        <option>Choose Size</option>
+        <option>6 (EU 39)</option>
+        <option>7 (EU 40)</option>
+        <option>8 (EU 41)</option>
+        <option>9 (EU 42)</option>
+        <option>10 (EU 43)</option>
+      </select>
+
+      <label for="qty">Quantity:</label>
+      <input type="number" id="qty" min="1" max="10" value="1"/>
+
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+  </div>
+
+  <!-- Related Products -->
+  <section class="related-products">
+    <h2>You May Also Like</h2>
+    <div class="related-boxes">
+      <div class="related-card">
+        <img src="https://img.freepik.com/free-photo/fashionable-sunglasses-yellow_1203-7257.jpg" alt="Sunglasses">
+        <h3>Trendy Sunglasses</h3>
+        <p><strong>PKR 999</strong></p>
+        <button onclick="viewProduct('Trendy Sunglasses')">View</button>
+      </div>
+
+      <div class="related-card">
+        <img src="https://img.freepik.com/free-photo/woman-handbag_1203-7666.jpg" alt="Handbag">
+        <h3>Elegant Handbag</h3>
+        <p><strong>PKR 3,499</strong></p>
+        <button onclick="viewProduct('Elegant Handbag')">View</button>
+      </div>
+
+      <div class="related-card">
+        <img src="https://img.freepik.com/free-photo/modern-black-headphones-isolated-white_93675-128239.jpg" alt="Headphones">
+        <h3>Wireless Headphones</h3>
+        <p><strong>PKR 2,199</strong></p>
+        <button onclick="viewProduct('Wireless Headphones')">View</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="index.js"></script>
+</body>
+</html>

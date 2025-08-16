@@ -1,0 +1,137 @@
+
+  body {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E7F6FB;
+    color: #222;
+  }
+
+  header {
+    background-color: #85C2D4;
+    color: #222;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+
+  header h1 {
+    font-size: 30px;
+    margin: 0;
+  }
+
+  .about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    background-color: #e7f6fb;
+    gap: 40px;
+  }
+
+  .about img {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  }
+
+  .about-text {
+    max-width: 500px;
+  }
+
+  .about-text h2 {
+    color: #d62828;
+    margin-bottom: 15px;
+    font-size: 28px;
+  }
+
+  .about-text p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #d62828;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #b81e1e;
+  }
+
+.mission, .vision, .milestones, .team {
+  padding: 40px 60px;
+  background-color: #f9f9f9;
+  margin-top: 20px;
+}
+
+.mission h2, .vision h2, .milestones h2, .team h2 {
+  color: #222;
+  font-size: 24px;
+ 
+}
+
+.mission p, .vision p {
+  color: #555;
+  max-width: 800px;
+  
+}
+
+.milestones ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.milestones li {
+  background: #fff;
+  margin: 10px 0;
+  padding: 15px;
+  border-left: 5px solid crimson;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.team-grid {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.member {
+  background: white;
+  padding: 20px;
+  flex: 1 1 200px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.member:hover {
+  transform: translateY(-5px);
+}
+
+.member i {
+  font-size: 40px;
+  color: crimson;
+}
+
+.member h3 {
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+.member p {
+  color: #666;
+}

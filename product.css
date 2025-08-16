@@ -1,0 +1,157 @@
+/* ===== Global ===== */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fefefe;
+  color: #333;
+}
+
+header {
+  background-color: #d62828;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* ===== Product Section ===== */
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.product-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.product-details {
+  max-width: 450px;
+}
+
+.product-details h2 {
+  color: #d62828;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.price-box {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.price-box del {
+  color: #888;
+  margin-right: 10px;
+}
+
+.price-box strong {
+  color: #d62828;
+  font-size: 22px;
+}
+
+select,
+input[type="number"] {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+  font-size: 16px;
+}
+
+button {
+  background-color: #d62828;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #b81e1e;
+}
+
+/*  Related Products */
+.related-products {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.related-products h2 {
+  font-size: 28px;
+  color: #d62828;
+  margin-bottom: 40px;
+}
+
+.related-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.related-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.06);
+  padding: 20px;
+  width: 220px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.related-card:hover {
+  transform: translateY(-5px);
+}
+
+.related-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.related-card h3 {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.related-card p {
+  color: #d62828;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.related-card button {
+  padding: 8px 16px;
+  font-size: 14px;
+  background-color: #d62828;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.related-card button:hover {
+  background-color: #b81e1e;
+}
+
+
