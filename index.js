@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
 
-      // store in array so multiple emails can be saved
+      
       let emails = JSON.parse(localStorage.getItem("homeEmails")) || [];
       emails.push(home_email);
       localStorage.setItem("homeEmails", JSON.stringify(emails));
@@ -116,10 +116,8 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", function() {
   let form = document.getElementById("contactForm");
   if (!form) return;
-
   form.addEventListener("submit", (e) => {
     e.preventDefault();
-
     let name = document.getElementById("name").value.trim();
     let email = document.getElementById("email").value.trim();
     let message = document.getElementById("message").value.trim();
@@ -130,13 +128,9 @@ document.addEventListener("DOMContentLoaded", function() {
       successMessage.style.color = "red";
       successMessage.style.display = "block";
     } else {
-      // consistent localStorage key
       let storedData = JSON.parse(localStorage.getItem("contactData")) || [];
       storedData.push({ name, email, message });
       localStorage.setItem("contactData", JSON.stringify(storedData));
-
-      console.log(storedData); // check in console
-
       successMessage.textContent = "✅ Message saved successfully!";
       successMessage.style.color = "green";
       successMessage.style.display = "block";
