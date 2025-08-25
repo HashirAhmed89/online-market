@@ -11,14 +11,18 @@
     <h1 class="section-title">Contact Us</h1>
     <p class="section-subtitle">We’re here to help you!</p>
 
-    <form class="contact-form" id="contactForm">
-      <input type="text" id="name" name="name" placeholder="Your Name" required />
-      <input type="email" id="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+  <form class="contact-form" id="contactForm">
+  <input type="text" id="name" name="name" placeholder="Your Name" required />
+  <input type="email" id="email" name="email" placeholder="Your Email" required />
+  <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+  <button type="submit">Send Message</button>
+</form>
 
-    <div id="successMessage" class="success-message">✅ Message sent successfully!</div>
+<div id="successMessage" class="success-message" style="display:none;">
+  ✅ Message sent successfully!
+</div>
+
+    
 
     <script src="index.js"></script>
   </section>
